@@ -8,31 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p class="title">Rock Paper Scissors</p>
-    <button class="icon-container" onclick="
-        playGame('rock');
-
-    "><img class="icon" src="images/rock-emoji.png"></button>
-
-    <button class="icon-container" onclick="
-        playGame('paper');  
-    "><img class="icon" src="images/paper-emoji.png"></button>
-
-    <button class="icon-container" onclick="
-        playGame('scissors');   
-    "><img class="icon" src="images/scissors-emoji.png"></button>
-
-    <p class="js-result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>
-
-    <button onclick="
-        score.wins = 0;
-        score.losses = 0;
-        score.ties = 0;
-        localStorage.removeItem('score');
-        updateScore()
-    " class="reset-score">Reset Score</button>
+    <div style="margin-left: 20px;">
+        <p class="title">Rock Paper Scissors</p>
+        <p style="font-weight: bold;"><u>Instructions:</u></p>
+        <div style="margin-left: 15px;">
+            <p>Press - 'R' for rock / 'P' for papper / 'S' for scissors</p>
+            <p>'A' for start/stop auto play</p>
+            <p>'Backspace' to reset score</p>
+        </div>
+        
+        <button class="icon-container"><img class="icon js-rock-button" src="images/rock-emoji.png"></button>
+    
+        <button class="icon-container"><img class="icon js-paper-button" src="images/paper-emoji.png"></button>
+    
+        <button class="icon-container"><img class="icon js-scissors-button" src="images/scissors-emoji.png"></button>
+    
+        <p class="js-result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score"></p>
+    
+        <button class="reset-score-button">Reset Score</button>
+    
+        <button class="auto-play-button">Auto Play</button>
+    
+        <div class="js-reset-confirmation-box"></div>
+    </div>
+        
+</body>
+    
 
 <script src="script.js"></script>
 

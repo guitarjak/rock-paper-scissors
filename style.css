@@ -32,8 +32,12 @@ p {
     font-weight: bold;
 }
 
-.reset-score {
+.reset-score-button, .auto-play-button {
     padding: 10px 15px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.js-reset-confirmation-box {
+    color: white;
 }
